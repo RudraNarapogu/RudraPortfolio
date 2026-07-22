@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { ArrowDown, Download } from 'lucide-react'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
 import { Mail } from 'lucide-react'
 
@@ -49,7 +49,7 @@ export default function Hero() {
               fontSize: '0.68rem',
               color: 'rgba(255,255,255,0.2)',
               letterSpacing: '0.1em',
-            }}>Hyderabad, India</span>
+            }}>Khammam, India</span>
           </motion.div>
 
           {/* Row 2: Big editorial heading */}
@@ -68,8 +68,8 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
               >
-                Manvitha<br />
-                <span style={{ color: 'rgba(255,255,255,0.2)' }}>Gopireddy</span>
+                Uday Charan<br />
+                <span style={{ color: 'rgba(255,255,255,0.2)' }}>Rudra</span>
               </motion.h1>
 
               <motion.div
@@ -88,11 +88,10 @@ export default function Hero() {
               >
                 <TypeAnimation
                   sequence={[
+                    'AI Automation Developer', 2500,
                     'Full Stack Developer', 2500,
-                    'MERN Stack Engineer', 2500,
-                    'React Native Developer', 2500,
-                    'Firebase Expert', 2500,
-                    'Azure Certified Dev', 2500,
+                    'Workflow Architect', 2500,
+                    'Generative AI Specialist', 2500,
                   ]}
                   wrapper="span"
                   repeat={Infinity}
@@ -120,7 +119,7 @@ export default function Hero() {
               }}>
                 <img
                   src={heroImg}
-                  alt="Manvitha Gopireddy"
+                  alt="Rudra"
                   className="profile-photo"
                   style={{ width: '100%', height: '100%' }}
                   onError={e => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex' }}
@@ -131,7 +130,7 @@ export default function Hero() {
                   alignItems: 'center', justifyContent: 'center',
                   fontFamily: 'var(--font-display)', fontSize: '3.5rem',
                   fontWeight: 700, color: 'rgba(255,255,255,0.15)',
-                }}>MG</div>
+                }}>RU</div>
                 {/* Overlay text */}
                 <div style={{
                   position: 'absolute', bottom: 0, left: 0, right: 0,
@@ -140,7 +139,7 @@ export default function Hero() {
                   fontFamily: 'var(--font-mono)',
                   fontSize: '0.62rem', color: 'rgba(255,255,255,0.6)',
                   letterSpacing: '0.08em',
-                }}>B.Tech CSE · 2025</div>
+                }}>AI & DATA SCIENCE · 2028</div>
               </div>
             </motion.div>
           </div>
@@ -167,10 +166,10 @@ export default function Hero() {
             </div>
             <div style={{ display: 'flex', gap: 8 }}>
               {[
-                { icon: <FaGithub size={16} />, href: 'https://github.com/Manvithagopireddy', label: 'GitHub' },
-                { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/gopireddy-manvitha-489a08368', label: 'LinkedIn' },
-                { icon: <SiLeetcode size={16} />, href: 'https://leetcode.com/u/gLJ2E1bNWI', label: 'LeetCode' },
-                { icon: <Mail size={16} />, href: 'mailto:gopireddymanvitha@gmail.com', label: 'Email' },
+                { icon: <FaGithub size={16} />, href: 'https://github.com/RudraNarapogu', label: 'GitHub' },
+                { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/rudranarapogu/', label: 'LinkedIn' },
+                { icon: <FaInstagram size={16} />, href: 'https://www.instagram.com/buildwith.rudra/', label: 'Instagram' },
+                { icon: <Mail size={16} />, href: 'mailto:narapogurudra@gmail.com', label: 'Email' },
               ].map(s => (
                 <Magnetic key={s.label} strength={0.5}>
                   <a href={s.href} target={s.href.startsWith('mailto') ? undefined : '_blank'}

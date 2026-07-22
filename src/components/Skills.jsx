@@ -2,20 +2,19 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const categories = {
-  Frontend: ['React.js', 'React Native', 'TypeScript', 'JavaScript', 'Vite', 'HTML5', 'CSS3', 'Tailwind CSS', 'Framer Motion', 'Recharts'],
-  Backend: ['Node.js', 'Express.js', 'REST APIs', 'Socket.IO', 'WebSocket'],
-  'Cloud & DB': ['MongoDB', 'Firebase Auth', 'Firestore', 'FCM', 'Firebase Functions', 'Azure', 'SQL'],
-  Languages: ['JavaScript', 'TypeScript', 'Java', 'Python', 'C'],
-  Tools: ['Git', 'GitHub', 'Postman', 'Expo', 'VS Code', 'Agile/Scrum'],
+  Automation: ['n8n', 'AI Automation', 'Workflow Orchestration', 'Zapier', 'API Integration'],
+  'AI & Data': ['Generative AI', 'Machine Learning', 'Data Analysis', 'Agentic Systems', 'OCR'],
+  Backend: ['Python', 'Django', 'FastAPI', 'Java', 'REST APIs', 'Docker'],
+  Frontend: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS'],
+  'Databases': ['MySQL', 'SQL', 'PostgreSQL', 'SQLite'],
 }
 
 const proficiency = [
-  { name: 'React.js', level: 90 },
-  { name: 'Node.js / Express', level: 85 },
-  { name: 'MongoDB', level: 82 },
-  { name: 'Firebase', level: 80 },
-  { name: 'TypeScript', level: 78 },
-  { name: 'React Native', level: 75 },
+  { name: 'AI Automation / n8n', level: 95 },
+  { name: 'Python / Django', level: 85 },
+  { name: 'Generative AI', level: 88 },
+  { name: 'REST APIs', level: 90 },
+  { name: 'Full Stack Dev', level: 82 },
 ]
 
 export default function Skills() {

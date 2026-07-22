@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 
 const coursework = [
-  'Data Structures', 'Algorithms', 'Operating Systems', 'Computer Networks',
-  'DBMS', 'Software Engineering', 'Machine Learning', 'Cloud Computing', 'OOP',
+  'Python Programming', 'Artificial Intelligence', 'Machine Learning', 'Data Structures',
+  'Web Development', 'Software Engineering', 'Database Management', 'Cloud Computing',
 ]
 
 export default function Education() {
@@ -25,6 +25,38 @@ export default function Education() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
           className="card"
+          style={{ padding: '40px', marginTop: 8, marginBottom: 24 }}
+        >
+          <div className="education-grid" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 24, alignItems: 'start', marginBottom: 24 }}>
+            <div>
+              <h3 style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: '1.5rem', fontWeight: 700, color: '#fff',
+                letterSpacing: '-0.02em', marginBottom: 6,
+              }}>
+                B.Tech — CSE (Data Science)
+              </h3>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.04em' }}>
+                Swarna Bharathi Institute of Science & Technology
+              </p>
+            </div>
+            <div style={{ textAlign: 'right' }}>
+              <div style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: '2rem', fontWeight: 700, color: '#fff',
+                letterSpacing: '-0.03em',
+              }}>2028</div>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Expected</div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="card"
           style={{ padding: '40px', marginTop: 8 }}
         >
           <div className="education-grid" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 24, alignItems: 'start', marginBottom: 24 }}>
@@ -34,10 +66,10 @@ export default function Education() {
                 fontSize: '1.5rem', fontWeight: 700, color: '#fff',
                 letterSpacing: '-0.02em', marginBottom: 6,
               }}>
-                B.Tech — Computer Science & Engineering
+                Diploma — Cloud Computing & Big Data
               </h3>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.04em' }}>
-                Sree Venkateshwara College of Engineering, Nellore
+                Government Institute of Electronics
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>
@@ -45,28 +77,8 @@ export default function Education() {
                 fontFamily: 'var(--font-display)',
                 fontSize: '2rem', fontWeight: 700, color: '#fff',
                 letterSpacing: '-0.03em',
-              }}>8.05</div>
+              }}>8.6</div>
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>CGPA</div>
-            </div>
-          </div>
-
-          <div style={{ width: '100%', height: 1, background: 'var(--border)', marginBottom: 24 }} />
-
-          <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16, marginBottom: 24 }}>
-            {[['Duration', 'Dec 2021 – Apr 2025'], ['Location', 'Nellore, Andhra Pradesh'], ['Degree', 'B.Tech']].map(([k, v]) => (
-              <div key={k}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 4 }}>{k}</div>
-                <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem' }}>{v}</div>
-              </div>
-            ))}
-          </div>
-
-          <div>
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 12 }}>
-              Relevant Coursework
-            </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-              {coursework.map(c => <span key={c} className="badge">{c}</span>)}
             </div>
           </div>
         </motion.div>

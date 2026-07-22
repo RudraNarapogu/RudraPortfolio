@@ -35,7 +35,7 @@ export default function Navbar() {
             fontWeight: 700, fontSize: '1.05rem',
             color: '#fff', letterSpacing: '-0.02em',
           }}>
-            Manvitha<span style={{ color: 'rgba(255,255,255,0.25)' }}>.dev</span>
+            Rudra<span style={{ color: 'rgba(255,255,255,0.25)' }}>.dev</span>
           </span>
         </a>
 

@@ -70,7 +70,7 @@ export default function SplashScreen() {
             whiteSpace: 'nowrap',
           }}
         >
-          Manvitha Gopireddy
+          Narapogu Uday Charan Rudra
         </motion.h1>
 
         <motion.div

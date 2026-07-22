@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
 
 const socials = [
-  { icon: <FaGithub size={16} />, href: 'https://github.com/Manvithagopireddy', label: 'GitHub' },
-  { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/gopireddy-manvitha-489a08368', label: 'LinkedIn' },
-  { icon: <SiLeetcode size={16} />, href: 'https://leetcode.com/u/gLJ2E1bNWI', label: 'LeetCode' },
-  { icon: <Mail size={16} />, href: 'mailto:gopireddymanvitha@gmail.com', label: 'Email' },
+  { icon: <FaGithub size={16} />, href: 'https://github.com/RudraNarapogu', label: 'GitHub' },
+  { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/rudranarapogu/', label: 'LinkedIn' },
+  { icon: <FaInstagram size={16} />, href: 'https://www.instagram.com/buildwith.rudra/', label: 'Instagram' },
+  { icon: <Mail size={16} />, href: 'mailto:narapogurudra@gmail.com', label: 'Email' },
 ]
 
 export default function Contact() {
@@ -18,7 +18,7 @@ export default function Contact() {
     e.preventDefault()
     const sub = encodeURIComponent(`Portfolio inquiry from ${form.name}`)
     const body = encodeURIComponent(form.message)
-    window.location.href = `mailto:gopireddymanvitha@gmail.com?subject=${sub}&body=${body}`
+    window.location.href = `mailto:narapogurudra@gmail.com?subject=${sub}&body=${body}`
   }
 
   return (
@@ -89,9 +89,9 @@ export default function Contact() {
             </div>
 
             {[
-              { icon: <Mail size={15} />, label: 'Email', val: 'gopireddymanvitha@gmail.com', href: 'mailto:gopireddymanvitha@gmail.com' },
-              { icon: <Phone size={15} />, label: 'Phone', val: '+91 6309451985', href: 'tel:+916309451985' },
-              { icon: <MapPin size={15} />, label: 'Location', val: 'Hyderabad, India', href: null },
+              { icon: <Mail size={15} />, label: 'Email', val: 'narapogurudra@gmail.com', href: 'mailto:narapogurudra@gmail.com' },
+              { icon: <Phone size={15} />, label: 'Phone', val: '+91 9154948056', href: 'tel:+919154948056' },
+              { icon: <MapPin size={15} />, label: 'Location', val: 'Khammam, Telangana, India', href: null },
             ].map(item => (
               <div key={item.label} className="card" style={{ padding: '18px 24px', borderRadius: 0, marginBottom: 2 }}>
                 <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>

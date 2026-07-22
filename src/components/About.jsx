@@ -26,17 +26,17 @@ function CountUp({ target, suffix = '' }) {
 }
 
 const stats = [
-  { n: 3, suffix: '+', label: 'Projects Shipped' },
-  { n: 1, suffix: '', label: 'Internship' },
-  { n: 2, suffix: '', label: 'Azure Certifications' },
-  { n: 8.05, suffix: '', label: 'CGPA' },
+  { n: 4, suffix: '+', label: 'Projects Shipped' },
+  { n: 2, suffix: '', label: 'Internships' },
+  { n: 8.6, suffix: '', label: 'Diploma CGPA' },
+  { n: 2028, suffix: '', label: 'B.Tech Grad' },
 ]
 
 const facts = [
-  ['Location', 'Hyderabad, India'],
+  ['Location', 'Khammam, India'],
   ['Available', 'Immediately'],
-  ['Focus', 'Full Stack & Mobile'],
-  ['Email', 'gopireddymanvitha@gmail.com'],
+  ['Focus', 'AI Automation & Data Science'],
+  ['Email', 'narapogurudra@gmail.com'],
 ]
 
 export default function About() {
@@ -63,12 +63,14 @@ export default function About() {
             marginBottom: 20,
             fontWeight: 400,
           }}>
-            Full Stack Developer with a B.Tech in CS, passionate about building production-grade solutions.
-            I specialize in the MERN stack, React Native for mobile, and Firebase for real-time cloud features.
+            I am an AI Automation Developer and CSE (Data Science) student with a passion for building AI-powered
+            automation systems and workflow orchestration platforms. I specialize in integrating Generative AI
+            and agentic systems into enterprise solutions.
           </p>
           <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.9rem', lineHeight: 1.9, marginBottom: 32 }}>
-            Built at-risk student alerting systems, real-time chat (sub-100ms Socket.IO), AI analytics dashboards,
-            and offline-first SPAs. Microsoft Azure certified (AZ-900, DP-900).
+            From building Telegram-based OCR data entry bots to conversational AI voice agents, I focus on
+            creating impactful technology that streamlines operations. I am a Google Student Ambassador
+            and GeeksForGeeks Campus Mantri, actively contributing to the developer community.
           </p>
 
           {/* Facts table */}
@@ -136,8 +138,8 @@ export default function About() {
           >
             <div style={{ color: 'rgba(255,255,255,0.2)', marginBottom: 4 }}>// developer.profile</div>
             <div><span style={{ color: 'rgba(255,255,255,0.3)' }}>const</span> <span style={{ color: '#fff' }}>dev</span> <span style={{ color: 'rgba(255,255,255,0.3)' }}>= {'{'}</span></div>
-            <div style={{ paddingLeft: 20 }}><span style={{ color: 'rgba(255,255,255,0.4)' }}>stack:</span> <span style={{ color: 'rgba(255,255,255,0.7)' }}>"MERN + React Native"</span><span style={{ color: 'rgba(255,255,255,0.2)' }}>,</span></div>
-            <div style={{ paddingLeft: 20 }}><span style={{ color: 'rgba(255,255,255,0.4)' }}>cloud:</span> <span style={{ color: 'rgba(255,255,255,0.7)' }}>"Azure + Firebase"</span><span style={{ color: 'rgba(255,255,255,0.2)' }}>,</span></div>
+            <div style={{ paddingLeft: 20 }}><span style={{ color: 'rgba(255,255,255,0.4)' }}>stack:</span> <span style={{ color: 'rgba(255,255,255,0.7)' }}>"AI Automation + Data Science"</span><span style={{ color: 'rgba(255,255,255,0.2)' }}>,</span></div>
+            <div style={{ paddingLeft: 20 }}><span style={{ color: 'rgba(255,255,255,0.4)' }}>core:</span> <span style={{ color: 'rgba(255,255,255,0.7)' }}>"Python + n8n + Django"</span><span style={{ color: 'rgba(255,255,255,0.2)' }}>,</span></div>
             <div style={{ paddingLeft: 20 }}><span style={{ color: 'rgba(255,255,255,0.4)' }}>available:</span> <span style={{ color: '#fff' }}>true</span><span style={{ color: 'rgba(255,255,255,0.2)' }}>,</span></div>
             <div><span style={{ color: 'rgba(255,255,255,0.3)' }}>{'}'}</span></div>
           </motion.div>

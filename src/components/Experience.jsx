@@ -21,7 +21,50 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          style={{ position: 'relative', paddingLeft: 32 }}
+          style={{ position: 'relative', paddingLeft: 32, marginBottom: 40 }}
+          className="experience-item"
+        >
+          <div className="timeline-line" />
+          <div className="timeline-dot" />
+
+          <div className="card" style={{ padding: '32px 36px', borderRadius: 4 }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 20 }}>
+              <div>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', fontWeight: 700, color: '#fff', letterSpacing: '-0.02em', marginBottom: 4 }}>
+                  Freelance AI Automation Developer
+                </h3>
+                <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap', marginTop: 8 }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.05em' }}>
+                    Self-Employed
+                  </span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)' }}>
+                    <Calendar size={11} /> Jan 2025 – Present
+                  </span>
+                </div>
+              </div>
+              <span className="badge badge-white">Freelance</span>
+            </div>
+            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {[
+                'Developed AI-powered automation workflows using n8n, APIs, and AI platforms.',
+                'Built a Telegram-based AI data entry automation system using OCR and AI extraction.',
+                'Created AI voice agent workflows and business automation solutions.',
+              ].map((b, i) => (
+                <li key={i} style={{ display: 'flex', gap: 12, color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', lineHeight: 1.65 }}>
+                  <span style={{ color: 'rgba(255,255,255,0.2)', fontFamily: 'var(--font-mono)', flexShrink: 0, marginTop: 1 }}>→</span>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          style={{ position: 'relative', paddingLeft: 32, marginBottom: 40 }}
           className="experience-item"
         >
           <div className="timeline-line" />
@@ -35,48 +78,68 @@ export default function Experience() {
                 </h3>
                 <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap', marginTop: 8 }}>
                   <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.05em' }}>
-                    Brain O Vision
+                    Crimson Innovative Technologies Pvt. Ltd.
                   </span>
                   <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)' }}>
-                    <Calendar size={11} /> Jan 2024 – Apr 2024
-                  </span>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)' }}>
-                    <MapPin size={11} /> Hyderabad, India
+                    <Calendar size={11} /> May 2024 – Oct 2024
                   </span>
                 </div>
               </div>
               <span className="badge badge-white">Internship</span>
             </div>
-
-            <div style={{ width: '100%', height: 1, background: 'var(--border)', marginBottom: 20 }} />
-
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
               {[
-                'Built real-time bidirectional chat with Socket.IO achieving sub-100ms message delivery',
-                'JWT-secured REST APIs and Socket.IO handshakes with token-based authentication',
-                'Responsive React.js UI with read receipts, typing indicators, and message history',
-                'Agile/Scrum sprint planning, daily standups, and retrospectives throughout the project',
-                'WebSocket connection management reducing server load through efficient event handling',
+                'Developed modules for an Employee Task Management System using Django, JavaScript, and MySQL.',
+                'Optimized backend workflows and database performance by 15%.',
               ].map((b, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: -12 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2 + i * 0.06 }}
-                  style={{ display: 'flex', gap: 12, color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', lineHeight: 1.65 }}
-                >
+                <li key={i} style={{ display: 'flex', gap: 12, color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', lineHeight: 1.65 }}>
                   <span style={{ color: 'rgba(255,255,255,0.2)', fontFamily: 'var(--font-mono)', flexShrink: 0, marginTop: 1 }}>→</span>
                   {b}
-                </motion.li>
+                </li>
               ))}
             </ul>
+          </div>
+        </motion.div>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 20 }}>
-              {['Socket.IO', 'React.js', 'Node.js', 'JWT', 'REST APIs', 'Agile'].map(t => (
-                <span key={t} className="badge">{t}</span>
-              ))}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          style={{ position: 'relative', paddingLeft: 32, marginBottom: 40 }}
+          className="experience-item"
+        >
+          <div className="timeline-line" />
+          <div className="timeline-dot" />
+
+          <div className="card" style={{ padding: '32px 36px', borderRadius: 4 }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 20 }}>
+              <div>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', fontWeight: 700, color: '#fff', letterSpacing: '-0.02em', marginBottom: 4 }}>
+                  Data Science and Machine Learning Intern
+                </h3>
+                <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap', marginTop: 8 }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.05em' }}>
+                    upSkill Campus
+                  </span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)' }}>
+                    <Calendar size={11} /> May 2026 – Jul 2026
+                  </span>
+                </div>
+              </div>
+              <span className="badge badge-white">Internship</span>
             </div>
+            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {[
+                'Selected for a research-oriented internship in collaboration with UniConverge Technologies Pvt. Ltd.',
+                'Developing ML models and performing exploratory data analysis (EDA) on large datasets.',
+              ].map((b, i) => (
+                <li key={i} style={{ display: 'flex', gap: 12, color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', lineHeight: 1.65 }}>
+                  <span style={{ color: 'rgba(255,255,255,0.2)', fontFamily: 'var(--font-mono)', flexShrink: 0, marginTop: 1 }}>→</span>
+                  {b}
+                </li>
+              ))}
+            </ul>
           </div>
         </motion.div>
         </div>
