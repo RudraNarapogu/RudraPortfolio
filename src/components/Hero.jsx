@@ -109,8 +109,8 @@ export default function Hero() {
               style={{ flexShrink: 0 }}
             >
               <div style={{
-                width: 220,
-                height: 220,
+                width: 380,
+                height: 380,
                 border: '1px solid rgba(255,255,255,0.15)',
                 borderRadius: 4,
                 overflow: 'hidden',
