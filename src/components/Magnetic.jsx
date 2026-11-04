@@ -6,6 +6,7 @@ export default function Magnetic({ children, strength = 0.5 }) {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   const handleMouseMove = (e) => {
+    if (!ref.current) return
     const { clientX, clientY } = e
     const { left, top, width, height } = ref.current.getBoundingClientRect()
     const middleX = clientX - (left + width / 2)

@@ -18,15 +18,17 @@ export default function CustomCursor() {
     }
 
     const handleMouseOver = (e) => {
-      if (
-        e.target.tagName.toLowerCase() === 'a' ||
-        e.target.tagName.toLowerCase() === 'button' ||
-        e.target.closest('a') ||
-        e.target.closest('button') ||
-        e.target.dataset.cursor === 'hover'
-      ) {
-        setIsHovering(true)
-      } else {
+      try {
+        const el = e.target && e.target.nodeType === 1 ? e.target : e.target?.parentElement
+        if (!el) return
+        const isHover =
+          el.tagName?.toLowerCase() === 'a' ||
+          el.tagName?.toLowerCase() === 'button' ||
+          (typeof el.closest === 'function' && Boolean(el.closest('a') || el.closest('button'))) ||
+          el.dataset?.cursor === 'hover'
+
+        setIsHovering(Boolean(isHover))
+      } catch (err) {
         setIsHovering(false)
       }
     }

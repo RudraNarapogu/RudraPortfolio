@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Send } from 'lucide-react'
-import { FaGithub, FaLinkedinIn, FaYoutube, FaDev, FaAws, FaGoogle } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube, FaDev, FaAws, FaGoogle } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
 const socials = [
