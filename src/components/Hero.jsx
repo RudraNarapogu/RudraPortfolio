@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { ArrowDown, Download } from 'lucide-react'
-import { FaGithub, FaLinkedinIn, FaYoutube, FaDev, FaAws, FaGoogle } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube, FaDev, FaAws, FaGoogle } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { Mail } from 'lucide-react'
 
@@ -168,6 +168,7 @@ export default function Hero() {
               {[
                 { icon: <FaGithub size={16} />, href: 'https://github.com/RudraNarapogu', label: 'GitHub' },
                 { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/rudranarapogu/', label: 'LinkedIn' },
+                { icon: <FaInstagram size={15} />, href: 'https://www.instagram.com/buildwith.rudra/', label: 'Instagram' },
                 { icon: <FaYoutube size={15} />, href: 'https://www.youtube.com/@rudranarapogu', label: 'YouTube' },
                 { icon: <FaXTwitter size={15} />, href: 'https://x.com/rudranarapogu', label: 'X (Twitter)' },
                 { icon: <FaDev size={15} />, href: 'https://dev.to/rudranarapogu', label: 'DEV Community' },

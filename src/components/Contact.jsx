@@ -8,6 +8,11 @@ const socials = [
   { icon: <FaGithub size={16} />, href: 'https://github.com/RudraNarapogu', label: 'GitHub' },
   { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/rudranarapogu/', label: 'LinkedIn' },
   { icon: <FaInstagram size={16} />, href: 'https://www.instagram.com/buildwith.rudra/', label: 'Instagram' },
+  { icon: <FaYoutube size={15} />, href: 'https://www.youtube.com/@rudranarapogu', label: 'YouTube' },
+  { icon: <FaXTwitter size={15} />, href: 'https://x.com/rudranarapogu', label: 'X (Twitter)' },
+  { icon: <FaDev size={15} />, href: 'https://dev.to/rudranarapogu', label: 'DEV Community' },
+  { icon: <FaAws size={15} />, href: 'https://community.aws/@rudranarapogu', label: 'AWS Builder' },
+  { icon: <FaGoogle size={15} />, href: 'https://me.developers.google.com/u/108888455259437787878', label: 'Google Developer' },
   { icon: <Mail size={16} />, href: 'mailto:narapogurudra@gmail.com', label: 'Email' },
 ]
 
