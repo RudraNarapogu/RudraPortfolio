@@ -1,17 +1,13 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, MapPin, Send } from 'lucide-react'
 import { FaGithub, FaLinkedinIn, FaYoutube, FaDev, FaAws, FaGoogle } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
 const socials = [
   { icon: <FaGithub size={16} />, href: 'https://github.com/RudraNarapogu', label: 'GitHub' },
   { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/rudranarapogu/', label: 'LinkedIn' },
-  { icon: <FaYoutube size={15} />, href: 'https://www.youtube.com/@rudranarapogu', label: 'YouTube' },
-  { icon: <FaXTwitter size={15} />, href: 'https://x.com/rudranarapogu', label: 'X (Twitter)' },
-  { icon: <FaDev size={15} />, href: 'https://dev.to/rudranarapogu', label: 'DEV Community' },
-  { icon: <FaAws size={15} />, href: 'https://community.aws/@rudranarapogu', label: 'AWS Builder' },
-  { icon: <FaGoogle size={15} />, href: 'https://me.developers.google.com/u/108888455259437787878', label: 'Google Developer' },
+  { icon: <FaInstagram size={16} />, href: 'https://www.instagram.com/buildwith.rudra/', label: 'Instagram' },
   { icon: <Mail size={16} />, href: 'mailto:narapogurudra@gmail.com', label: 'Email' },
 ]
 
@@ -94,7 +90,6 @@ export default function Contact() {
 
             {[
               { icon: <Mail size={15} />, label: 'Email', val: 'narapogurudra@gmail.com', href: 'mailto:narapogurudra@gmail.com' },
-              { icon: <Phone size={15} />, label: 'Phone', val: '+91 9154948056', href: 'tel:+919154948056' },
               { icon: <MapPin size={15} />, label: 'Location', val: 'Khammam, Telangana, India', href: null },
             ].map(item => (
               <div key={item.label} className="card" style={{ padding: '18px 24px', borderRadius: 0, marginBottom: 2 }}>
