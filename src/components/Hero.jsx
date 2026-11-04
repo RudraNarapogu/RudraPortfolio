@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { ArrowDown, Download } from 'lucide-react'
-import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
-import { SiLeetcode } from 'react-icons/si'
+import { FaGithub, FaLinkedinIn, FaYoutube, FaDev, FaAws, FaGoogle } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 import { Mail } from 'lucide-react'
 
 import heroImg from '../assets/hero.png'
@@ -164,11 +164,15 @@ export default function Hero() {
               <Magnetic strength={0.3}><a href="#projects" className="btn-primary" style={{ padding: '12px 24px' }}>View Work <ArrowDown size={14} /></a></Magnetic>
               <Magnetic strength={0.3}><a href="/resume.pdf" download className="btn-ghost" style={{ padding: '12px 24px' }}><Download size={14} /> Resume</a></Magnetic>
             </div>
-            <div style={{ display: 'flex', gap: 8 }}>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {[
                 { icon: <FaGithub size={16} />, href: 'https://github.com/RudraNarapogu', label: 'GitHub' },
                 { icon: <FaLinkedinIn size={15} />, href: 'https://www.linkedin.com/in/rudranarapogu/', label: 'LinkedIn' },
-                { icon: <FaInstagram size={16} />, href: 'https://www.instagram.com/buildwith.rudra/', label: 'Instagram' },
+                { icon: <FaYoutube size={15} />, href: 'https://www.youtube.com/@rudranarapogu', label: 'YouTube' },
+                { icon: <FaXTwitter size={15} />, href: 'https://x.com/rudranarapogu', label: 'X (Twitter)' },
+                { icon: <FaDev size={15} />, href: 'https://dev.to/rudranarapogu', label: 'DEV Community' },
+                { icon: <FaAws size={15} />, href: 'https://community.aws/@rudranarapogu', label: 'AWS Builder' },
+                { icon: <FaGoogle size={15} />, href: 'https://me.developers.google.com/u/108888455259437787878', label: 'Google Developer' },
                 { icon: <Mail size={16} />, href: 'mailto:narapogurudra@gmail.com', label: 'Email' },
               ].map(s => (
                 <Magnetic key={s.label} strength={0.5}>

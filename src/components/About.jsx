@@ -26,7 +26,7 @@ function CountUp({ target, suffix = '' }) {
 }
 
 const stats = [
-  { n: 4, suffix: '+', label: 'Projects Shipped' },
+  { n: 5, suffix: '+', label: 'Projects Shipped' },
   { n: 2, suffix: '', label: 'Internships' },
   { n: 8.6, suffix: '', label: 'Diploma CGPA' },
   { n: 2028, suffix: '', label: 'B.Tech Grad' },
