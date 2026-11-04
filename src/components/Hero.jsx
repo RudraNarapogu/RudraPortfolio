@@ -162,7 +162,7 @@ export default function Hero() {
           >
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               <Magnetic strength={0.3}><a href="#projects" className="btn-primary" style={{ padding: '12px 24px' }}>View Work <ArrowDown size={14} /></a></Magnetic>
-              <Magnetic strength={0.3}><a href="/resume.pdf" download className="btn-ghost" style={{ padding: '12px 24px' }}><Download size={14} /> Resume</a></Magnetic>
+              <Magnetic strength={0.3}><a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="btn-ghost" style={{ padding: '12px 24px' }}><Download size={14} /> Resume</a></Magnetic>
             </div>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {[

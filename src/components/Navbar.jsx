@@ -47,7 +47,7 @@ export default function Navbar() {
             </Magnetic>
           ))}
           <Magnetic strength={0.3}>
-            <a href="/resume.pdf" download className="btn-primary" style={{ padding: '8px 20px', fontSize: '0.78rem' }}>
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="btn-primary" style={{ padding: '8px 20px', fontSize: '0.78rem' }}>
               Resume ↓
             </a>
           </Magnetic>
@@ -82,7 +82,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                 >{link.label}</a>
               ))}
-              <a href="/resume.pdf" download className="btn-primary" style={{ textAlign: 'center', marginTop: 8 }}>
+              <a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="btn-primary" style={{ textAlign: 'center', marginTop: 8 }}>
                 Resume ↓
               </a>
             </div>
